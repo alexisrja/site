@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zaraweb - Desarrollo Web a tu Medida</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+     <div class="netflix-intro">
+        <div class="intro-logo">
+            <svg viewBox="0 0 500 200">
+                <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle" font-family="Arial" font-size="80" font-weight="bold" fill="#ffffff">ZARABEW</text>
+            </svg>
+        </div>
+        <div class="loading-bar">
+            <div class="progress"></div>
+        </div>
+    </div>
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="container">
+            <a href="#" class="logo" style="display: flex; align-items: center; gap: 0.5rem; justify-content: flex-start;">
+    <img src="/recursos/Zaraweb.jpg" alt="Zaraweb Logo" class="z-icon" style="height: 48px; width: 48px; border-radius: 8px; object-fit: cover; box-shadow: 0 2px 8px rgba(0,0,0,0.08); background: #fff;">
+    <span class="logo-text">Zaraweb</span>
+</a>
+
+   
+            <nav class="nav-links" style="display: flex; justify-content: center; width: 100%;">
+                <ul style="display: flex; justify-content: center; align-items: center; gap: 1.5rem; list-style: none; margin: 0; padding: 0;">
+                    <li><a href="#home">Inicio</a></li>
+                    <li><a href="#services">Servicios</a></li>
+                    <li><a href="#portfolio">Portafolio</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                    <li><a href="login.html" id="login-btn" class="btn btn-outline">Iniciar sesión</a></li>
+                    <li>
+                        <button id="theme-toggle" class="theme-toggle" aria-label="Cambiar tema">
+                            <i class="fas fa-moon"></i>
+                        </button>
+                       
+                    </li>
+                </ul>
+            </nav>
+            <button class="hamburger" aria-label="Menú">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-bg"></div>
+        <div class="container">
+            <div class="hero-content">
+                <h1>Conecta ideas, crea presencia: desarrollo web a tu medida</h1>
+                <p>Soluciones digitales personalizadas para impulsar tu negocio en línea</p>
+                <button id="quote-btn" class="btn btn-primary">Cotiza tu proyecto</button>
+            </div>
+        </div>
+        <div class="scroll-down">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Nuestros Servicios</h2>
+            <p class="section-subtitle">Soluciones a medida para tus necesidades digitales</p>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Desarrollo Web</h3>
+                    <p>Sitios web personalizados, rápidos y optimizados para todos los dispositivos.</p>
+                    <button class="btn btn-small">Más info</button>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3>Diseño UI/UX</h3>
+                    <p>Interfaces intuitivas y atractivas que mejoran la experiencia del usuario.</p>
+                    <button class="btn btn-small">Más info</button>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3>SEO Optimizado</h3>
+                    <p>Mejoramos tu visibilidad en buscadores para atraer más clientes.</p>
+                    <button class="btn btn-small">Más info</button>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h3>Hosting & Dominio</h3>
+                    <p>Alojamiento seguro y confiable con soporte técnico especializado.</p>
+                    <button class="btn btn-small">Más info</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2>Nuestro Portafolio</h2>
+            <p class="section-subtitle">Algunos de nuestros proyectos destacados</p>
+            
+            <div class="portfolio-filters">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="web">Web</button>
+                <button class="filter-btn" data-filter="ecommerce">E-commerce</button>
+                <button class="filter-btn" data-filter="mobile">Mobile</button>
+            </div>
+            
+            <div class="portfolio-grid">
+                <!-- Proyectos se cargarán dinámicamente con JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2>Contáctanos</h2>
+                    <p>¿Listo para comenzar tu proyecto? Escríbenos y te responderemos en menos de 24 horas.</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>contacto@zarabew.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+1 234 567 890</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Ciudad Creativa, Digitalandia</span>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <form id="contact-form" class="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" placeholder="Nombre completo" required>
+                        <span class="error-message"></span>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" placeholder="Correo electrónico" required>
+                        <span class="error-message"></span>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" id="phone" placeholder="Teléfono (opcional)">
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" placeholder="Cuéntanos sobre tu proyecto" required></textarea>
+                        <span class="error-message"></span>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar mensaje</button>
+                    <div id="form-success" class="form-success">
+                        ¡Mensaje enviado con éxito! Nos pondremos en contacto pronto.
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Login Modal -->
+    <div id="login-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Iniciar Sesión</h2>
+            <form id="login-form">
+                <div class="form-group">
+                    <input type="email" id="login-email" placeholder="Correo electrónico" required>
+                    <span class="error-message"></span>
+                </div>
+                <div class="form-group">
+                    <input type="password" id="login-password" placeholder="Contraseña" required>
+                    <span class="error-message"></span>
+                </div>
+                <button type="submit" class="btn btn-primary">Ingresar</button>
+                <p class="auth-switch">¿No tienes cuenta? <a href="#" id="show-register">Regístrate</a></p>
+            </form>
+            
+            <form id="register-form" class="hidden">
+                <h2>Registro</h2>
+                <div class="form-group">
+                    <input type="text" id="register-name" placeholder="Nombre completo" required>
+                    <span class="error-message"></span>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="register-email" placeholder="Correo electrónico" required>
+                    <span class="error-message"></span>
+                </div>
+                <div class="form-group">
+                    <input type="password" id="register-password" placeholder="Contraseña" required>
+                    <span class="error-message"></span>
+                </div>
+                <div class="form-group">
+                    <input type="password" id="register-confirm" placeholder="Confirmar contraseña" required>
+                    <span class="error-message"></span>
+                </div>
+                <button type="submit" class="btn btn-primary">Registrarse</button>
+                <p class="auth-switch">¿Ya tienes cuenta? <a href="#" id="show-login">Inicia sesión</a></p>
+            </form>
+        </div>
+    </div>
+
+    <!-- Quote Modal -->
+    <div id="quote-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Cotiza tu Proyecto</h2>
+            <form id="quote-form">
+                <div class="form-group">
+                    <select id="project-type" required>
+                        <option value="" disabled selected>Selecciona el tipo de proyecto</option>
+                        <option value="website">Sitio web</option>
+                        <option value="ecommerce">Tienda en línea</option>
+                        <option value="app">Aplicación móvil</option>
+                        <option value="redesign">Rediseño</option>
+                        <option value="other">Otro</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <textarea id="project-details" placeholder="Describe tu proyecto en detalle" required></textarea>
+                    <span class="error-message"></span>
+                </div>
+                <div class="form-group">
+                    <input type="text" id="budget" placeholder="Presupuesto aproximado (opcional)">
+                </div>
+                <div class="form-group">
+                    <input type="text" id="timeline" placeholder="Línea de tiempo deseada (opcional)">
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar solicitud</button>
+                <div id="quote-success" class="form-success">
+                    ¡Solicitud enviada! Te contactaremos con una cotización en 24 horas.
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="#" class="logo" style="display: flex; align-items: center; gap: 0.5rem; justify-content: flex-start;">
+    <img src="/recursos/Zaraweb.jpg" alt="Zaraweb Logo" class="z-icon" style="height: 48px; width: 48px; border-radius: 8px; object-fit: cover; box-shadow: 0 2px 8px rgba(0,0,0,0.08); background: #fff;">
+    <span class="logo-text">Zaraweb</span>
+</a>
+                    <p>Soluciones web creativas y personalizadas para impulsar tu presencia digital.</p>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Enlaces rápidos</h4>
+                    <ul>
+                        <li><a href="#home">Inicio</a></li>
+                        <li><a href="#services">Servicios</a></li>
+                        <li><a href="#portfolio">Portafolio</a></li>
+                        <li><a href="#contact">Contacto</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Servicios</h4>
+                    <ul>
+                        <li><a href="#">Desarrollo Web</a></li>
+                        <li><a href="#">Diseño UI/UX</a></li>
+                        <li><a href="#">SEO</a></li>
+                        <li><a href="#">Hosting</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Contacto</h4>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> contacto@zarabew.com</li>
+                        <li><i class="fas fa-phone"></i> +1 234 567 890</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Ciudad Creativa, Digitalandia</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 Zarabew. Todos los derechos reservados.</p>
+                <div class="footer-links">
+                    <a href="#">Términos y condiciones</a>
+                    <a href="#">Política de privacidad</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+<script src="/js/mode.js"></script>
+    <script src="/js/script.js"></script>
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <script src="/js/firebase-config.js"></script>
+</body>
+</html>

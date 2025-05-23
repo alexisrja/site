@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Cuenta - Zarabew</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="dashboard">
+    <!-- Intro estilo Netflix -->
+    <div class="netflix-intro">
+        <div class="intro-logo">
+            <svg viewBox="0 0 500 200">
+                <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle" font-family="Arial" font-size="80" font-weight="bold" fill="#ffffff">ZARABEW</text>
+            </svg>
+        </div>
+        <div class="loading-bar">
+            <div class="progress"></div>
+        </div>
+    </div>
+    
+    <!-- Contenido principal -->
+    <div class="dashboard-container" style="display: none;">
+        <header class="dashboard-header">
+            <a href="index.html" class="logo">
+                <span class="z-icon">
+                    <svg width="30" height="30" viewBox="0 0 100 100">
+                        <path d="M20,20 L80,20 L30,80 L80,80" stroke="#ffffff" stroke-width="12" fill="none" stroke-linecap="round"/>
+                    </svg>
+                </span>
+                <span class="logo-text">Zarabew</span>
+            </a>
+            
+            <nav class="user-nav">
+                <button id="logout-btn" class="btn btn-outline">Cerrar sesión</button>
+            </nav>
+        </header>
+        
+        <main class="dashboard-main">
+            <h1>Bienvenido, <span id="user-name"></span></h1>
+            
+            <div class="projects-section">
+                <h2>Tus Proyectos</h2>
+                <div class="projects-grid" id="projects-grid">
+                    <!-- Proyectos se cargarán dinámicamente -->
+                </div>
+            </div>
+            
+            <div class="account-section">
+                <h2>Configuración de Cuenta</h2>
+                <form id="account-form">
+                    <div class="form-group">
+                        <label for="account-name">Nombre</label>
+                        <input type="text" id="account-name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="account-email">Correo electrónico</label>
+                        <input type="email" id="account-email" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Guardar cambios</button>
+                </form>
+            </div>
+        </main>
+    </div>
+
+    <script src="js/firebase-config.js"></script>
+    <script src="js/dashboard.js"></script>
+</body>
+</html>
